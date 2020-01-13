@@ -19,6 +19,7 @@ public class GrabData {
 	//Variables
 	Scanner input = new Scanner(System.in);
 
+	//Enter the csv file path here.
 	String csvFile = "Entry Level Coding Challenge Page 2.csv";
 	//Regular Expression that finds Commas and Ignores Commas between Quotes
 	String csvSplitBy = ",(?=(?:[^\\\"]*\\\"[^\\\"]*\\\")*[^\\\"]*$)";
@@ -55,11 +56,11 @@ public class GrabData {
 	FileWriter csvWriter = new FileWriter(efilename);
 	//Create file to Output Records to a csv
 	System.out.println("\r\nEnter Record File Name: ");
-	String rfilename =   "tmp"+ File.separator+input.next() + ".csv";
+	String rfilename =   "tmp"+ File.separator + input.next() + ".csv";
 	FileWriter csv2Writer = new FileWriter(rfilename);
 	//Create a Log File
 	System.out.println("Enter Log File Name: ");
-	String lfilename = "tmp" +File.separator+ input.next() + ".log";
+	String lfilename = "tmp"+File.separator+ input.next() + ".log";
 	FileWriter logWriter = new FileWriter(lfilename);
 	//Create Database and Table
 	//Code for Creating the Table that is incomplete. 
@@ -70,7 +71,7 @@ public class GrabData {
 			fileData.get(0)[3] +"  TEXT,\r\n" + 
 			fileData.get(0)[4] +"  TEXT,\r\n" + 
 			fileData.get(0)[5] +"  TEXT,\r\n" + 
-			fileData.get(0)[6] +"  TEXT,\r\n" + 
+			fileData.get(0)[6] +"  TEXT,\r\n" + g
 			fileData.get(0)[7] +"  TEXT,\r\n" + 
 			fileData.get(0)[8] +"  TEXT,\r\n" + 
 			fileData.get(0)[9] +"  TEXT\r\n" + 
@@ -80,8 +81,8 @@ public class GrabData {
 	{
 		if(isValid(fileData.get(i)))
 				{
-				successfulRecords++;
-				recordError(fileData.get(i),csv2Writer);
+					successfulRecords++;
+					recordError(fileData.get(i),csv2Writer);
 				}else
 				{
 					failedRecords++;
@@ -96,8 +97,8 @@ public class GrabData {
 	logWriter.append("Failed Records: "+ failedRecords+ "\n");
 	logWriter.close();
 	csvWriter.close();
+	csv2Writer.close();
 	input.close();
-	System.out.println("Program Complete");
 	}
 	
 //Determines if Rows have the correct amount of columns.
