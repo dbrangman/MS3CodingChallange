@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="src" path="src"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/JavaSE-13">
+		<attributes>
+			<attribute name="module" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="C:/Users/WINTE/Downloads/commons-csv-1.7-bin/commons-csv-1.7/commons-csv-1.7.jar">
+		<attributes>
+			<attribute name="module" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="C:/Users/WINTE/Downloads/commons-csv-1.7-bin/commons-csv-1.7/commons-csv-1.7-sources.jar">
+		<attributes>
+			<attribute name="module" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="C:/Users/WINTE/Downloads/sqlite-jdbc-3.30.1 (1).jar">
+		<attributes>
+			<attribute name="module" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="C:/Users/WINTE/eclipse-workspace/ms3CodeChal/mysql-connector-java-8.0.18/mysql-connector-java-8.0.18.jar">
+		<attributes>
+			<attribute name="module" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="C:/Users/WINTE/Downloads/sqlite-jdbc-3.30.1 (2).jar"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.USER_LIBRARY/SQLite"/>
+	<classpathentry kind="output" path="bin"/>
+</classpath>
